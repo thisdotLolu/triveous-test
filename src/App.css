@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+
+.App{
+  max-width: 700px;
+  margin: 5rem auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App img{
+  width: 60%;
+  height: 200px;
+  object-fit: contain;
+}
+/* Basic editor styles */
+.text-editor{
+  border-radius: 5px;
+  border: 1px solid grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.edit-options{
+  padding-bottom: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-options button{
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-options button:hover{
+  background-color: rgba(0,0,0,0.2);
+  
+}
+.edit-options button.is-active {
+  background: rgb(0,0,0,0.2);
+  padding: 2px 3px;
+  border-radius: 2px;
+}
+
+.imageUpload{
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.imageUpload:hover{
+  background-color: rgba(0,0,0,0.2);
+}
+/* TitTap Editor Design */
+.ProseMirror {
+  padding-top: 30px;
+  border-top: 1px solid grey;
+  background: white;
+  border-radius: 0 0 5px 5px;
+  min-height: 100px;
+}
+
+
+.ProseMirror:focus {
+  border: none;
+  outline: none;
+}
+
+.ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding: 0 2rem;
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+  line-height: 1.1;
+}
+
+.ProseMirror code {
+  background-color: rgba(#616161, 0.1);
+  color: #616161;
+}
+
+.ProseMirror pre {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: "JetBrainsMono", monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.ProseMirror code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProseMirror blockquote {
+  padding-left: 1rem;
+  border-left: 3px solid #999999;
+}
+
+.ProseMirror hr {
+  border: none;
+  border-top: 3px solid #999999;
+  margin: 2rem 0;
+}
+/* editor */
+
+.editor-container{
+
 }
