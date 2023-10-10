@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import React, { useEffect, useState } from 'react'
@@ -15,6 +16,7 @@ const MenuBar = ({editor}) => {
       widthRef.current.value = 640
       heightRef.current.value = 480
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [widthRef.current, heightRef.current])
 
   const addYoutubeVideo = () => {
@@ -29,6 +31,7 @@ const MenuBar = ({editor}) => {
     }
   }
 
+  // eslint-disable-next-line no-unused-vars
   const [file, setFile] = useState('')
   const[imageUrl, setImageUrl] = useState('')
 
