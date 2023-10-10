@@ -2,10 +2,9 @@ import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import React, { useEffect, useState } from 'react'
 import {FaBold,FaItalic,FaStrikethrough,FaHeading,FaYoutube, FaListOl, FaListUl,FaCode, FaParagraph, FaUndoAlt,FaRedoAlt, FaImage, FaUpload} from 'react-icons/fa'
-// import './EditorPage.scss'
 import Image from '@tiptap/extension-image'
-// import { Node } from '@tiptap/core'
 import Youtube from '@tiptap/extension-youtube'
+
 
 const MenuBar = ({editor}) => {
 
